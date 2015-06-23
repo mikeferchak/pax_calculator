@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Thin</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="main_view" id="BYZ-38-t0r" customClass="ViewController" customModule="PAX" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xeV-eO-d9g"/>
+                        <viewControllerLayoutGuide type="bottom" id="9S6-Y6-zW0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" id="KVz-M5-neI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter time" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="e2a-Hr-W54">
+                                <rect key="frame" x="20" y="85" width="420" height="71"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="60"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="time_changed:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="GaC-h6-DfV"/>
+                                    <action selector="time_changed:" destination="BYZ-38-t0r" eventType="editingChanged" id="Z9l-m0-tQm"/>
+                                    <action selector="time_changed:" destination="BYZ-38-t0r" eventType="valueChanged" id="ncd-wi-tyx"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="lgx-PN-FAZ"/>
+                                </connections>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UFu-6H-w6r" userLabel="picker_one">
+                                <rect key="frame" x="460" y="20" width="120" height="200"/>
+                                <animations/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="MRx-mI-rpS"/>
+                                    <constraint firstAttribute="width" constant="120" id="VOC-He-rMe"/>
+                                </constraints>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GGj-Xo-k4S" userLabel="picker_two">
+                                <rect key="frame" x="460" y="220" width="120" height="200"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="4cA-3P-Adx"/>
+                                    <constraint firstAttribute="width" constant="120" id="Uol-ie-F2J"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZw-vT-f1x">
+                                <rect key="frame" x="20" y="284" width="420" height="72"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="60"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqu-gc-GuH">
+                                <rect key="frame" x="20" y="181" width="420" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="e2a-Hr-W54" firstAttribute="leading" secondItem="KVz-M5-neI" secondAttribute="leadingMargin" id="8P3-1A-K6m"/>
+                            <constraint firstItem="GGj-Xo-k4S" firstAttribute="leading" secondItem="JZw-vT-f1x" secondAttribute="trailing" constant="20" id="A9A-Eo-qll"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GGj-Xo-k4S" secondAttribute="trailing" id="AE7-8k-gWW"/>
+                            <constraint firstItem="JZw-vT-f1x" firstAttribute="centerY" secondItem="GGj-Xo-k4S" secondAttribute="centerY" id="RNA-Ki-9Rf"/>
+                            <constraint firstItem="UFu-6H-w6r" firstAttribute="top" secondItem="xeV-eO-d9g" secondAttribute="bottom" id="TKh-3k-vKS"/>
+                            <constraint firstItem="yqu-gc-GuH" firstAttribute="leading" secondItem="KVz-M5-neI" secondAttribute="leadingMargin" id="Uwi-1V-dRd"/>
+                            <constraint firstItem="UFu-6H-w6r" firstAttribute="leading" secondItem="e2a-Hr-W54" secondAttribute="trailing" constant="20" id="dt1-cw-VzN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UFu-6H-w6r" secondAttribute="trailing" id="eDB-ES-wBF"/>
+                            <constraint firstItem="e2a-Hr-W54" firstAttribute="centerY" secondItem="UFu-6H-w6r" secondAttribute="centerY" id="fKY-7e-SPY"/>
+                            <constraint firstItem="JZw-vT-f1x" firstAttribute="leading" secondItem="KVz-M5-neI" secondAttribute="leadingMargin" id="fSE-F7-xe6"/>
+                            <constraint firstItem="GGj-Xo-k4S" firstAttribute="top" secondItem="UFu-6H-w6r" secondAttribute="bottom" id="frm-er-Tgm"/>
+                            <constraint firstItem="yqu-gc-GuH" firstAttribute="width" secondItem="e2a-Hr-W54" secondAttribute="width" id="g5v-fd-9ti"/>
+                            <constraint firstItem="yqu-gc-GuH" firstAttribute="top" secondItem="e2a-Hr-W54" secondAttribute="bottom" id="laF-tc-sH4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="that_pax_picker" destination="GGj-Xo-k4S" id="qSt-e6-oWH"/>
+                        <outlet property="that_time" destination="JZw-vT-f1x" id="7pe-Ta-xSt"/>
+                        <outlet property="this_pax_picker" destination="UFu-6H-w6r" id="zjW-ZB-E7k"/>
+                        <outlet property="this_time" destination="e2a-Hr-W54" id="XC1-7i-Kee"/>
+                        <outlet property="this_time_more_info" destination="yqu-gc-GuH" id="8BV-ke-gwV"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="252" y="387"/>
+        </scene>
+    </scenes>
+</document>
