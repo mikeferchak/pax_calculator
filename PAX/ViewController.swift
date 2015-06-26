@@ -14,15 +14,35 @@ class ViewController: UIViewController, UIPickerViewDelegate {
     @IBOutlet var this_pax_picker:UIPickerView!
     @IBOutlet var that_pax_picker:UIPickerView!
     @IBOutlet var that_time:UILabel!
-
+    
+    let defaults = NSUserDefaults.standardUserDefaults()
+    
     @IBAction func time_changed(sender: AnyObject) {
         recalculate()
+    }
+    
+    func load_defaults() {
+        if let defaults_this_time = defaults.stringForKey("this_time"){
+            let defaults_this_pax = defaults.integerForKey("this_pax")
+            let defaults_that_pax = defaults.integerForKey("that_pax")
+
+            if self.this_time.text == nil {
+                self.this_time.text = defaults_this_time
+            }
+            self.this_pax_picker.selectRow(defaults_this_pax, inComponent: 0, animated: true)
+            self.that_pax_picker.selectRow(defaults_that_pax, inComponent: 0, animated: true)
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.this_pax_picker.delegate = self
         self.that_pax_picker.delegate = self
+        
+        load_defaults()
+        
+        this_time.enabled = true
+        this_time.becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,6 +56,10 @@ class ViewController: UIViewController, UIPickerViewDelegate {
                 that_pax = Scca().pax_at_index(that_pax_picker.selectedRowInComponent(0)),
             value = Calculator().calculate(my_time, this_pax: this_pax,that_pax: that_pax)
             that_time.text = "\(value)"
+            
+            defaults.setObject(my_time, forKey: "this_time")
+            defaults.setObject(this_pax_picker.selectedRowInComponent(0), forKey: "this_pax")
+            defaults.setObject(that_pax_picker.selectedRowInComponent(0), forKey: "that_pax")
             
             update_this_more_info()
         }

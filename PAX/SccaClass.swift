@@ -69,20 +69,6 @@ class Scca {
         return Array(classes.keys)
     }
   
-    func class_names() -> [String] {
-        var all = [String]()
-        for item in classes {
-            for sccaclass in item.1 {
-                all.append(sccaclass.0)
-            }
-        }
-        return all
-    }
-    
-    func class_name_at_index(index:Int) -> String {
-        return class_names()[index]
-    }
-  
     func paxes() -> [String:Double] {
         var all = Dictionary<String, Double>()
         for item in classes {
@@ -91,6 +77,14 @@ class Scca {
             }
         }
         return all
+    }
+    
+    func class_names() -> [String] {
+        return Array(paxes().keys).sort()
+    }
+
+    func class_name_at_index(index:Int) -> String {
+        return class_names()[index]
     }
     
     func pax_at_index(index:Int) -> Double {
