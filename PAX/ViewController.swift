@@ -14,6 +14,7 @@ class ViewController: UIViewController, UIPickerViewDelegate {
     @IBOutlet var this_pax_picker:UIPickerView!
     @IBOutlet var that_pax_picker:UIPickerView!
     @IBOutlet var that_time:UILabel!
+    @IBOutlet var that_time_more_info:UILabel!
     
     let defaults = NSUserDefaults.standardUserDefaults()
     
@@ -50,12 +51,11 @@ class ViewController: UIViewController, UIPickerViewDelegate {
     }
   
     func recalculate() {
-        if this_time.text != "" && this_time.text != nil {
-            let my_time = Double(this_time.text!)!,
-                this_pax = Scca().pax_at_index(this_pax_picker.selectedRowInComponent(0)),
+        if let my_time = Double(this_time.text!) {
+            let this_pax = Scca().pax_at_index(this_pax_picker.selectedRowInComponent(0)),
                 that_pax = Scca().pax_at_index(that_pax_picker.selectedRowInComponent(0)),
-            value = Calculator().calculate(my_time, this_pax: this_pax,that_pax: that_pax)
-            that_time.text = "\(value)"
+                value = Calculator().calculate(my_time, this_pax: this_pax,that_pax: that_pax)
+                that_time.text = "\(value)"
             
             defaults.setObject(my_time, forKey: "this_time")
             defaults.setObject(this_pax_picker.selectedRowInComponent(0), forKey: "this_pax")
@@ -68,12 +68,16 @@ class ViewController: UIViewController, UIPickerViewDelegate {
     func update_this_more_info() {
         if this_time.text != "" && this_time.text != nil && that_time.text != "" && that_time.text != nil {
             let this_class = Scca().class_name_at_index(this_pax_picker.selectedRowInComponent(0)),
+                that_class = Scca().class_name_at_index(that_pax_picker.selectedRowInComponent(0)),
                 this_pax = Scca().pax_at_index(this_pax_picker.selectedRowInComponent(0)),
+                that_pax = Scca().pax_at_index(that_pax_picker.selectedRowInComponent(0)),
                 my_time = Double(this_time.text!)!,
                 other_time = Double(that_time.text!)!,
-                difference = my_time - other_time
+                difference = my_time - other_time,
+                rounded_difference = round(1000 * difference) / 1000
             
-            this_time_more_info.text = "\(this_class) PAX: \(this_pax) \r\(difference) difference"
+            this_time_more_info.text = "\(this_class) PAX: \(this_pax) \rDiff: \(rounded_difference)s"
+            that_time_more_info.text = "\(that_class) PAX: \(that_pax)"
         }
     }
 
@@ -91,6 +95,16 @@ class ViewController: UIViewController, UIPickerViewDelegate {
   
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         recalculate()
+    }
+    
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+        
+        let currentCharacterCount = textField.text?.characters.count ?? 0
+        if (range.length + range.location > currentCharacterCount){
+            return false
+        }
+        let newLength = currentCharacterCount + string.characters.count - range.length
+        return newLength <= 7
     }
 }
 

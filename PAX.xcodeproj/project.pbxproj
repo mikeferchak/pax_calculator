@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3223EB771CC2D48200E10D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3223EB761CC2D48200E10D7E /* Assets.xcassets */; };
 		323EDDCD1B38C6E800225061 /* SccaClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323EDDCC1B38C6E800225061 /* SccaClass.swift */; };
 		32C0EE021B388F370034CE25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C0EE011B388F370034CE25 /* AppDelegate.swift */; };
 		32C0EE041B388F370034CE25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C0EE031B388F370034CE25 /* ViewController.swift */; };
 		32C0EE071B388F370034CE25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C0EE051B388F370034CE25 /* Main.storyboard */; };
-		32C0EE091B388F370034CE25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32C0EE081B388F370034CE25 /* Assets.xcassets */; };
 		32C0EE0C1B388F370034CE25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C0EE0A1B388F370034CE25 /* LaunchScreen.storyboard */; };
 		32C0EE271B388F370034CE25 /* PAX WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 32C0EE261B388F370034CE25 /* PAX WatchKit App.app */; };
 		32C0EE2D1B388F370034CE25 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C0EE2B1B388F370034CE25 /* Interface.storyboard */; };
@@ -67,12 +67,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3223EB761CC2D48200E10D7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		323EDDCC1B38C6E800225061 /* SccaClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SccaClass.swift; sourceTree = "<group>"; };
 		32C0EDFE1B388F370034CE25 /* PAX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PAX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C0EE011B388F370034CE25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32C0EE031B388F370034CE25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		32C0EE061B388F370034CE25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		32C0EE081B388F370034CE25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32C0EE0B1B388F370034CE25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32C0EE0D1B388F370034CE25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32C0EE161B388F370034CE25 /* PAXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAXTests.swift; sourceTree = "<group>"; };
@@ -143,11 +143,11 @@
 				32C0EE011B388F370034CE25 /* AppDelegate.swift */,
 				32C0EE031B388F370034CE25 /* ViewController.swift */,
 				32C0EE051B388F370034CE25 /* Main.storyboard */,
-				32C0EE081B388F370034CE25 /* Assets.xcassets */,
 				32C0EE0A1B388F370034CE25 /* LaunchScreen.storyboard */,
 				32C0EE0D1B388F370034CE25 /* Info.plist */,
 				323EDDCC1B38C6E800225061 /* SccaClass.swift */,
 				32D328901B390F7900CF9F43 /* Calculator.swift */,
+				3223EB761CC2D48200E10D7E /* Assets.xcassets */,
 			);
 			path = PAX;
 			sourceTree = "<group>";
@@ -323,7 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32C0EE0C1B388F370034CE25 /* LaunchScreen.storyboard in Resources */,
-				32C0EE091B388F370034CE25 /* Assets.xcassets in Resources */,
+				3223EB771CC2D48200E10D7E /* Assets.xcassets in Resources */,
 				32C0EE071B388F370034CE25 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +432,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -451,6 +452,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "7ab0c95e-94d3-4873-8933-4a01624e6a9a";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -477,6 +479,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -489,6 +492,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "7ab0c95e-94d3-4873-8933-4a01624e6a9a";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -503,7 +507,7 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "PAX WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ferchak.PAX.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
@@ -521,7 +525,7 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "PAX WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ferchak.PAX.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
@@ -541,7 +545,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = PAX_WatchKit_Extension;
 				INFOPLIST_FILE = "PAX WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = ferchak.PAX.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
@@ -561,7 +565,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = PAX_WatchKit_Extension;
 				INFOPLIST_FILE = "PAX WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = ferchak.PAX.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
@@ -580,11 +584,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PAX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ferchak.PAX;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -597,11 +601,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PAX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ferchak.PAX;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

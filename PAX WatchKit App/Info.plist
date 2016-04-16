@@ -28,7 +28,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>ferchak.PAX</string>
+	<string>com.ferchak.pax</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>
