@@ -11,8 +11,8 @@ import UIKit
 class ViewController: UIViewController, UIPickerViewDelegate {
     @IBOutlet var this_time:UITextField!
     @IBOutlet var this_time_more_info:UILabel!
-    @IBOutlet var this_pax_picker:UIPickerView!
-    @IBOutlet var that_pax_picker:UIPickerView!
+    @IBOutlet var this_class_picker:UIPickerView!
+    @IBOutlet var that_class_picker:UIPickerView!
     @IBOutlet var that_time:UILabel!
     @IBOutlet var that_time_more_info:UILabel!
     
@@ -30,15 +30,15 @@ class ViewController: UIViewController, UIPickerViewDelegate {
             if self.this_time.text == nil {
                 self.this_time.text = defaults_this_time
             }
-            self.this_pax_picker.selectRow(defaults_this_pax, inComponent: 0, animated: true)
-            self.that_pax_picker.selectRow(defaults_that_pax, inComponent: 0, animated: true)
+            self.this_class_picker.selectRow(defaults_this_pax, inComponent: 0, animated: true)
+            self.that_class_picker.selectRow(defaults_that_pax, inComponent: 0, animated: true)
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.this_pax_picker.delegate = self
-        self.that_pax_picker.delegate = self
+        self.this_class_picker.delegate = self
+        self.that_class_picker.delegate = self
         
         load_defaults()
         
@@ -52,14 +52,16 @@ class ViewController: UIViewController, UIPickerViewDelegate {
   
     func recalculate() {
         if let my_time = Double(this_time.text!) {
-            let this_pax = Scca().pax_at_index(this_pax_picker.selectedRowInComponent(0)),
-                that_pax = Scca().pax_at_index(that_pax_picker.selectedRowInComponent(0)),
+            let this_picker_value = this_class_picker.selectedRowInComponent(0),
+                that_picker_value = that_class_picker.selectedRowInComponent(0),
+                this_pax = Scca().pax_at_index(this_picker_value),
+                that_pax = Scca().pax_at_index(that_picker_value),
                 value = Calculator().calculate(my_time, this_pax: this_pax,that_pax: that_pax)
                 that_time.text = "\(value)"
             
             defaults.setObject(my_time, forKey: "this_time")
-            defaults.setObject(this_pax_picker.selectedRowInComponent(0), forKey: "this_pax")
-            defaults.setObject(that_pax_picker.selectedRowInComponent(0), forKey: "that_pax")
+            defaults.setObject(this_picker_value, forKey: "this_pax")
+            defaults.setObject(that_picker_value, forKey: "that_pax")
             
             update_this_more_info()
         }
@@ -67,10 +69,12 @@ class ViewController: UIViewController, UIPickerViewDelegate {
     
     func update_this_more_info() {
         if this_time.text != "" && this_time.text != nil && that_time.text != "" && that_time.text != nil {
-            let this_class = Scca().class_name_at_index(this_pax_picker.selectedRowInComponent(0)),
-                that_class = Scca().class_name_at_index(that_pax_picker.selectedRowInComponent(0)),
-                this_pax = Scca().pax_at_index(this_pax_picker.selectedRowInComponent(0)),
-                that_pax = Scca().pax_at_index(that_pax_picker.selectedRowInComponent(0)),
+            let this_picker_value = this_class_picker.selectedRowInComponent(0),
+                that_picker_value = that_class_picker.selectedRowInComponent(0),
+                this_class = Scca().class_name_at_index(this_picker_value),
+                that_class = Scca().class_name_at_index(that_picker_value),
+                this_pax = Scca().pax_at_index(this_picker_value),
+                that_pax = Scca().pax_at_index(that_picker_value),
                 my_time = Double(this_time.text!)!,
                 other_time = Double(that_time.text!)!,
                 difference = my_time - other_time,
