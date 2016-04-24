@@ -4,20 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Notification - PAX WatchKit App.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
-		</dict>
-		<key>PAX WatchKit App.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
 		<key>PAX.xcscheme</key>
 		<dict>
 			<key>orderHint</key>

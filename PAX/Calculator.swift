@@ -9,9 +9,10 @@
 import Foundation
 
 class Calculator {
-    func calculate(this_time:Double, this_pax:Double, that_pax:Double) -> Double{
-        var calc = (this_time * this_pax) / that_pax
-            calc = round(1000 * calc) / 1000
-        return calc
+    var result = Double()
+    
+    init(this_time:Double, this_pax:Double, that_pax:Double) {
+        let calc = (this_time * this_pax) / that_pax
+        result = round(1000 * calc) / 1000
     }
 }

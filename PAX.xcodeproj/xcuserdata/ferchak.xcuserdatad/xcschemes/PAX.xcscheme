@@ -28,26 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "32C0EE111B388F370034CE25"
-               BuildableName = "PAXTests.xctest"
-               BlueprintName = "PAXTests"
-               ReferencedContainer = "container:PAX.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "32C0EE1C1B388F370034CE25"
-               BuildableName = "PAXUITests.xctest"
-               BlueprintName = "PAXUITests"
-               ReferencedContainer = "container:PAX.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
@@ -106,6 +86,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "PAX"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

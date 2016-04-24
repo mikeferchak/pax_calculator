@@ -8,58 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		3223EB771CC2D48200E10D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3223EB761CC2D48200E10D7E /* Assets.xcassets */; };
-		323EDDCD1B38C6E800225061 /* SccaClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323EDDCC1B38C6E800225061 /* SccaClass.swift */; };
+		323EDDCD1B38C6E800225061 /* Scca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323EDDCC1B38C6E800225061 /* Scca.swift */; };
+		3247B1541CCD377500395945 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3247B1531CCD377500395945 /* Defaults.swift */; };
+		3247B1561CCD546100395945 /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3247B1551CCD546100395945 /* Run.swift */; };
+		3247B1581CCD54A100395945 /* Pax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3247B1571CCD54A100395945 /* Pax.swift */; };
 		32C0EE021B388F370034CE25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C0EE011B388F370034CE25 /* AppDelegate.swift */; };
 		32C0EE041B388F370034CE25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C0EE031B388F370034CE25 /* ViewController.swift */; };
 		32C0EE071B388F370034CE25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C0EE051B388F370034CE25 /* Main.storyboard */; };
 		32C0EE0C1B388F370034CE25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C0EE0A1B388F370034CE25 /* LaunchScreen.storyboard */; };
-		32C0EE271B388F370034CE25 /* PAX WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 32C0EE261B388F370034CE25 /* PAX WatchKit App.app */; };
-		32C0EE2D1B388F370034CE25 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C0EE2B1B388F370034CE25 /* Interface.storyboard */; };
-		32C0EE2F1B388F370034CE25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32C0EE2E1B388F370034CE25 /* Assets.xcassets */; };
-		32C0EE361B388F370034CE25 /* PAX WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 32C0EE351B388F370034CE25 /* PAX WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		32C0EE3D1B388F370034CE25 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C0EE3C1B388F370034CE25 /* InterfaceController.swift */; };
-		32C0EE3F1B388F370034CE25 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C0EE3E1B388F370034CE25 /* ExtensionDelegate.swift */; };
-		32C0EE411B388F370034CE25 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C0EE401B388F370034CE25 /* NotificationController.swift */; };
-		32C0EE431B388F370034CE25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32C0EE421B388F370034CE25 /* Assets.xcassets */; };
 		32D328911B390F7900CF9F43 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D328901B390F7900CF9F43 /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		32C0EE281B388F370034CE25 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 32C0EDF61B388F370034CE25 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 32C0EE251B388F370034CE25;
-			remoteInfo = "PAX WatchKit App";
-		};
-		32C0EE371B388F370034CE25 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 32C0EDF61B388F370034CE25 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 32C0EE341B388F370034CE25;
-			remoteInfo = "PAX WatchKit Extension";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
-		32C0EE4A1B388F370034CE25 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				32C0EE361B388F370034CE25 /* PAX WatchKit Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		32C0EE4E1B388F370034CE25 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				32C0EE271B388F370034CE25 /* PAX WatchKit App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,43 +34,22 @@
 
 /* Begin PBXFileReference section */
 		3223EB761CC2D48200E10D7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		323EDDCC1B38C6E800225061 /* SccaClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SccaClass.swift; sourceTree = "<group>"; };
+		323EDDCC1B38C6E800225061 /* Scca.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scca.swift; sourceTree = "<group>"; };
+		3247B1531CCD377500395945 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		3247B1551CCD546100395945 /* Run.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
+		3247B1571CCD54A100395945 /* Pax.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pax.swift; sourceTree = "<group>"; };
 		32C0EDFE1B388F370034CE25 /* PAX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PAX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C0EE011B388F370034CE25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32C0EE031B388F370034CE25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		32C0EE061B388F370034CE25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32C0EE0B1B388F370034CE25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32C0EE0D1B388F370034CE25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		32C0EE161B388F370034CE25 /* PAXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAXTests.swift; sourceTree = "<group>"; };
-		32C0EE181B388F370034CE25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		32C0EE211B388F370034CE25 /* PAXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAXUITests.swift; sourceTree = "<group>"; };
-		32C0EE231B388F370034CE25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		32C0EE261B388F370034CE25 /* PAX WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PAX WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		32C0EE2C1B388F370034CE25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		32C0EE2E1B388F370034CE25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		32C0EE301B388F370034CE25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		32C0EE351B388F370034CE25 /* PAX WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PAX WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		32C0EE3B1B388F370034CE25 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		32C0EE3C1B388F370034CE25 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		32C0EE3E1B388F370034CE25 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		32C0EE401B388F370034CE25 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		32C0EE421B388F370034CE25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		32C0EE441B388F370034CE25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32D3288D1B38E06700CF9F43 /* PAX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PAX.entitlements; sourceTree = "<group>"; };
-		32D3288E1B38E08C00CF9F43 /* PAX WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "PAX WatchKit Extension.entitlements"; sourceTree = "<group>"; };
-		32D3288F1B38E09800CF9F43 /* PAX WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "PAX WatchKit App.entitlements"; sourceTree = "<group>"; };
 		32D328901B390F7900CF9F43 /* Calculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		32C0EDFB1B388F370034CE25 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		32C0EE321B388F370034CE25 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -118,10 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				32C0EE001B388F370034CE25 /* PAX */,
-				32C0EE151B388F370034CE25 /* PAXTests */,
-				32C0EE201B388F370034CE25 /* PAXUITests */,
-				32C0EE2A1B388F370034CE25 /* PAX WatchKit App */,
-				32C0EE391B388F370034CE25 /* PAX WatchKit Extension */,
 				32C0EDFF1B388F370034CE25 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,8 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				32C0EDFE1B388F370034CE25 /* PAX.app */,
-				32C0EE261B388F370034CE25 /* PAX WatchKit App.app */,
-				32C0EE351B388F370034CE25 /* PAX WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,62 +84,14 @@
 				32C0EE051B388F370034CE25 /* Main.storyboard */,
 				32C0EE0A1B388F370034CE25 /* LaunchScreen.storyboard */,
 				32C0EE0D1B388F370034CE25 /* Info.plist */,
-				323EDDCC1B38C6E800225061 /* SccaClass.swift */,
+				323EDDCC1B38C6E800225061 /* Scca.swift */,
+				3247B1571CCD54A100395945 /* Pax.swift */,
 				32D328901B390F7900CF9F43 /* Calculator.swift */,
 				3223EB761CC2D48200E10D7E /* Assets.xcassets */,
+				3247B1531CCD377500395945 /* Defaults.swift */,
+				3247B1551CCD546100395945 /* Run.swift */,
 			);
 			path = PAX;
-			sourceTree = "<group>";
-		};
-		32C0EE151B388F370034CE25 /* PAXTests */ = {
-			isa = PBXGroup;
-			children = (
-				32C0EE161B388F370034CE25 /* PAXTests.swift */,
-				32C0EE181B388F370034CE25 /* Info.plist */,
-			);
-			path = PAXTests;
-			sourceTree = "<group>";
-		};
-		32C0EE201B388F370034CE25 /* PAXUITests */ = {
-			isa = PBXGroup;
-			children = (
-				32C0EE211B388F370034CE25 /* PAXUITests.swift */,
-				32C0EE231B388F370034CE25 /* Info.plist */,
-			);
-			path = PAXUITests;
-			sourceTree = "<group>";
-		};
-		32C0EE2A1B388F370034CE25 /* PAX WatchKit App */ = {
-			isa = PBXGroup;
-			children = (
-				32D3288F1B38E09800CF9F43 /* PAX WatchKit App.entitlements */,
-				32C0EE2B1B388F370034CE25 /* Interface.storyboard */,
-				32C0EE2E1B388F370034CE25 /* Assets.xcassets */,
-				32C0EE301B388F370034CE25 /* Info.plist */,
-			);
-			path = "PAX WatchKit App";
-			sourceTree = "<group>";
-		};
-		32C0EE391B388F370034CE25 /* PAX WatchKit Extension */ = {
-			isa = PBXGroup;
-			children = (
-				32D3288E1B38E08C00CF9F43 /* PAX WatchKit Extension.entitlements */,
-				32C0EE3C1B388F370034CE25 /* InterfaceController.swift */,
-				32C0EE3E1B388F370034CE25 /* ExtensionDelegate.swift */,
-				32C0EE401B388F370034CE25 /* NotificationController.swift */,
-				32C0EE421B388F370034CE25 /* Assets.xcassets */,
-				32C0EE441B388F370034CE25 /* Info.plist */,
-				32C0EE3A1B388F370034CE25 /* Supporting Files */,
-			);
-			path = "PAX WatchKit Extension";
-			sourceTree = "<group>";
-		};
-		32C0EE3A1B388F370034CE25 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				32C0EE3B1B388F370034CE25 /* PushNotificationPayload.apns */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,46 +109,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				32C0EE291B388F370034CE25 /* PBXTargetDependency */,
 			);
 			name = PAX;
 			productName = PAX;
 			productReference = 32C0EDFE1B388F370034CE25 /* PAX.app */;
 			productType = "com.apple.product-type.application";
-		};
-		32C0EE251B388F370034CE25 /* PAX WatchKit App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 32C0EE4B1B388F370034CE25 /* Build configuration list for PBXNativeTarget "PAX WatchKit App" */;
-			buildPhases = (
-				32C0EE241B388F370034CE25 /* Resources */,
-				32C0EE4A1B388F370034CE25 /* Embed App Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				32C0EE381B388F370034CE25 /* PBXTargetDependency */,
-			);
-			name = "PAX WatchKit App";
-			productName = "PAX WatchKit App";
-			productReference = 32C0EE261B388F370034CE25 /* PAX WatchKit App.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		32C0EE341B388F370034CE25 /* PAX WatchKit Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 32C0EE471B388F370034CE25 /* Build configuration list for PBXNativeTarget "PAX WatchKit Extension" */;
-			buildPhases = (
-				32C0EE311B388F370034CE25 /* Sources */,
-				32C0EE321B388F370034CE25 /* Frameworks */,
-				32C0EE331B388F370034CE25 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "PAX WatchKit Extension";
-			productName = "PAX WatchKit Extension";
-			productReference = 32C0EE351B388F370034CE25 /* PAX WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -273,25 +129,7 @@
 						DevelopmentTeam = GPCTX783ZZ;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-						};
-					};
-					32C0EE251B388F370034CE25 = {
-						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = GPCTX783ZZ;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
-							};
-						};
-					};
-					32C0EE341B388F370034CE25 = {
-						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = GPCTX783ZZ;
-						SystemCapabilities = {
-							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -311,8 +149,6 @@
 			projectRoot = "";
 			targets = (
 				32C0EDFD1B388F370034CE25 /* PAX */,
-				32C0EE251B388F370034CE25 /* PAX WatchKit App */,
-				32C0EE341B388F370034CE25 /* PAX WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -328,23 +164,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		32C0EE241B388F370034CE25 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				32C0EE2F1B388F370034CE25 /* Assets.xcassets in Resources */,
-				32C0EE2D1B388F370034CE25 /* Interface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		32C0EE331B388F370034CE25 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				32C0EE431B388F370034CE25 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -353,36 +172,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				32C0EE041B388F370034CE25 /* ViewController.swift in Sources */,
+				3247B1561CCD546100395945 /* Run.swift in Sources */,
 				32D328911B390F7900CF9F43 /* Calculator.swift in Sources */,
+				3247B1541CCD377500395945 /* Defaults.swift in Sources */,
+				3247B1581CCD54A100395945 /* Pax.swift in Sources */,
 				32C0EE021B388F370034CE25 /* AppDelegate.swift in Sources */,
-				323EDDCD1B38C6E800225061 /* SccaClass.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		32C0EE311B388F370034CE25 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				32C0EE411B388F370034CE25 /* NotificationController.swift in Sources */,
-				32C0EE3F1B388F370034CE25 /* ExtensionDelegate.swift in Sources */,
-				32C0EE3D1B388F370034CE25 /* InterfaceController.swift in Sources */,
+				323EDDCD1B38C6E800225061 /* Scca.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		32C0EE291B388F370034CE25 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 32C0EE251B388F370034CE25 /* PAX WatchKit App */;
-			targetProxy = 32C0EE281B388F370034CE25 /* PBXContainerItemProxy */;
-		};
-		32C0EE381B388F370034CE25 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 32C0EE341B388F370034CE25 /* PAX WatchKit Extension */;
-			targetProxy = 32C0EE371B388F370034CE25 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		32C0EE051B388F370034CE25 /* Main.storyboard */ = {
@@ -399,14 +198,6 @@
 				32C0EE0B1B388F370034CE25 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		32C0EE2B1B388F370034CE25 /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				32C0EE2C1B388F370034CE25 /* Base */,
-			);
-			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -499,82 +290,6 @@
 			};
 			name = Release;
 		};
-		32C0EE481B388F370034CE25 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "PAX WatchKit Extension/PAX WatchKit Extension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
-				INFOPLIST_FILE = "PAX WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		32C0EE491B388F370034CE25 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "PAX WatchKit Extension/PAX WatchKit Extension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
-				INFOPLIST_FILE = "PAX WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		32C0EE4C1B388F370034CE25 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "PAX WatchKit App/PAX WatchKit App.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				IBSC_MODULE = PAX_WatchKit_Extension;
-				INFOPLIST_FILE = "PAX WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		32C0EE4D1B388F370034CE25 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "PAX WatchKit App/PAX WatchKit App.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				IBSC_MODULE = PAX_WatchKit_Extension;
-				INFOPLIST_FILE = "PAX WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
 		32C0EE501B388F370034CE25 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -617,24 +332,6 @@
 			buildConfigurations = (
 				32C0EE451B388F370034CE25 /* Debug */,
 				32C0EE461B388F370034CE25 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		32C0EE471B388F370034CE25 /* Build configuration list for PBXNativeTarget "PAX WatchKit Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				32C0EE481B388F370034CE25 /* Debug */,
-				32C0EE491B388F370034CE25 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		32C0EE4B1B388F370034CE25 /* Build configuration list for PBXNativeTarget "PAX WatchKit App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				32C0EE4C1B388F370034CE25 /* Debug */,
-				32C0EE4D1B388F370034CE25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
