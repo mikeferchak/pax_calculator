@@ -15,14 +15,14 @@ class Defaults {
     var thatPaxPicker = Int()
     
     init() {
-        thisPaxPicker = defaults.integerForKey("this_pax")
-        thatPaxPicker = defaults.integerForKey("that_pax")
-        thisTime = defaults.doubleForKey("this_time")
+        thisTime = defaults.doubleForKey("PAX_thisTime")
+        thisPaxPicker = defaults.integerForKey("PAX_thisPickerIndex")
+        thatPaxPicker = defaults.integerForKey("PAX_thatPickerIndex")
     }
     
     func set(thisTimeNew:Double, thisPaxPickerNew:Int, thatPaxPickerNew:Int) {
-        defaults.setDouble(thisTimeNew, forKey: "this_time")
-        defaults.setInteger(thisPaxPickerNew, forKey: "this_pax")
-        defaults.setInteger(thatPaxPickerNew, forKey: "that_pax")
+        defaults.setDouble(thisTimeNew, forKey: "PAX_thisTime")
+        defaults.setInteger(thisPaxPickerNew, forKey: "PAX_thisPickerIndex")
+        defaults.setInteger(thatPaxPickerNew, forKey: "PAX_thatPickerIndex")
     }
 }

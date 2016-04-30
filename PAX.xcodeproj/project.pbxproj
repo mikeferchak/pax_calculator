@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3223EB771CC2D48200E10D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3223EB761CC2D48200E10D7E /* Assets.xcassets */; };
+		322AF48E1CD443F900100148 /* NoPasteTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322AF48D1CD443F900100148 /* NoPasteTextField.swift */; };
 		323EDDCD1B38C6E800225061 /* Scca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323EDDCC1B38C6E800225061 /* Scca.swift */; };
 		3247B1541CCD377500395945 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3247B1531CCD377500395945 /* Defaults.swift */; };
 		3247B1561CCD546100395945 /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3247B1551CCD546100395945 /* Run.swift */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		3223EB761CC2D48200E10D7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		322AF48D1CD443F900100148 /* NoPasteTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoPasteTextField.swift; path = PAX/NoPasteTextField.swift; sourceTree = "<group>"; };
 		323EDDCC1B38C6E800225061 /* Scca.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scca.swift; sourceTree = "<group>"; };
 		3247B1531CCD377500395945 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		3247B1551CCD546100395945 /* Run.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		32C0EDF51B388F370034CE25 = {
 			isa = PBXGroup;
 			children = (
+				322AF48D1CD443F900100148 /* NoPasteTextField.swift */,
 				32C0EE001B388F370034CE25 /* PAX */,
 				32C0EDFF1B388F370034CE25 /* Products */,
 			);
@@ -175,6 +178,7 @@
 				3247B1561CCD546100395945 /* Run.swift in Sources */,
 				32D328911B390F7900CF9F43 /* Calculator.swift in Sources */,
 				3247B1541CCD377500395945 /* Defaults.swift in Sources */,
+				322AF48E1CD443F900100148 /* NoPasteTextField.swift in Sources */,
 				3247B1581CCD54A100395945 /* Pax.swift in Sources */,
 				32C0EE021B388F370034CE25 /* AppDelegate.swift in Sources */,
 				323EDDCD1B38C6E800225061 /* Scca.swift in Sources */,

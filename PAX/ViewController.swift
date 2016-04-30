@@ -38,20 +38,31 @@ class ViewController: UIViewController, UIPickerViewDelegate {
         super.didReceiveMemoryWarning()
     }
     
+    override func canPerformAction(action: Selector, withSender sender: AnyObject?) -> Bool {
+        UIMenuController.sharedMenuController().menuVisible = false
+        if action == #selector(NSObject.paste(_:)) {
+            return false
+        }
+        return super.canPerformAction(action, withSender:sender)
+    }
+    
     func applyDefaults() {
         let defaults = Defaults()
         
-        this_time.text = String(defaults.thisTime)
         this_class_picker.selectRow(defaults.thisPaxPicker, inComponent: 0, animated: true)
         that_class_picker.selectRow(defaults.thatPaxPicker, inComponent: 0, animated: true)
+        
+        if defaults.thisTime > 0 {
+            this_time.text = String(defaults.thisTime)
+        }
     }
   
     func recalculate() {
         if let thisRun = Run(txtFieldTime: this_time, pickerIndex: this_class_picker.selectedRowInComponent(0)){
             let thatRun = Run(calculateFrom: thisRun.time,
-                              thisPickerIndex: that_class_picker.selectedRowInComponent(0),
-                              thisPaxIndex: Pax(index: that_class_picker.selectedRowInComponent(0)).paxIndex,
-                              thatPaxIndex: thisRun.pax.paxIndex)
+                              thisPickerIndex: thisRun.pax.pickerIndex,
+                              thatPickerIndex: that_class_picker.selectedRowInComponent(0))
+            
             that_time.text = "\(thatRun.time)"
             Defaults().set(thisRun.time,
                            thisPaxPickerNew: thisRun.pax.pickerIndex,

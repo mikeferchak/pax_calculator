@@ -36,8 +36,10 @@ class Run {
         }
     }
     
-    init(calculateFrom:Double, thisPickerIndex:Int, thisPaxIndex:Double, thatPaxIndex:Double) {
-        pax = Pax(index: thisPickerIndex)
-        time = Calculator(this_time: calculateFrom, this_pax: thisPaxIndex, that_pax: thatPaxIndex).result
+    init(calculateFrom:Double, thisPickerIndex:Int, thatPickerIndex:Int) {
+        pax = Pax(index: thatPickerIndex)
+        let this = Pax(index: thisPickerIndex).paxIndex
+        let that = Pax(index: thatPickerIndex).paxIndex
+        time = Calculator(this_time: calculateFrom, this_pax: this, that_pax: that).result
     }
 }
