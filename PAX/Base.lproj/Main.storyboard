@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C48b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,38 +18,38 @@
                         <viewControllerLayoutGuide type="bottom" id="9S6-Y6-zW0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" id="KVz-M5-neI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TET-fO-WfU">
-                                <rect key="frame" x="16" y="241" width="343" height="210"/>
+                                <rect key="frame" x="20" y="246" width="374" height="216"/>
                                 <subviews>
                                     <pickerView contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GGj-Xo-k4S" userLabel="picker_two">
-                                        <rect key="frame" x="263" y="0.0" width="80" height="210"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <rect key="frame" x="294" y="0.0" width="80" height="216"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="k4d-t5-uQc"/>
                                         </constraints>
                                     </pickerView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hh7-Eu-vH8">
-                                        <rect key="frame" x="0.0" y="51" width="253" height="108"/>
+                                        <rect key="frame" x="0.0" y="55" width="284" height="107.66666666666669"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NqJ-ZB-ntN">
-                                                <rect key="frame" x="0.0" y="108" width="253" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="107.66666666666669" width="284" height="0.0"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" enabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZw-vT-f1x">
-                                                <rect key="frame" x="0.0" y="0.0" width="253" height="108"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="284" height="107.66666666666669"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="NmX-Qr-ujl"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="90"/>
-                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="NqJ-ZB-ntN" firstAttribute="centerX" secondItem="hh7-Eu-vH8" secondAttribute="centerX" id="8Mw-CZ-Pyl"/>
                                             <constraint firstItem="NqJ-ZB-ntN" firstAttribute="top" secondItem="JZw-vT-f1x" secondAttribute="top" id="CQZ-cy-xT7"/>
@@ -74,7 +78,7 @@
                                         </variation>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="GGj-Xo-k4S" firstAttribute="centerY" secondItem="TET-fO-WfU" secondAttribute="centerY" id="Enh-mW-GbE"/>
                                     <constraint firstItem="GGj-Xo-k4S" firstAttribute="height" secondItem="TET-fO-WfU" secondAttribute="height" id="Qay-IY-I03"/>
@@ -93,26 +97,26 @@
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iMa-zN-bFt">
-                                <rect key="frame" x="16" y="20" width="343" height="211"/>
+                                <rect key="frame" x="20" y="20" width="374" height="216"/>
                                 <subviews>
                                     <pickerView contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UFu-6H-w6r" userLabel="picker_one">
-                                        <rect key="frame" x="263" y="0.0" width="80" height="211"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <rect key="frame" x="294" y="0.0" width="80" height="216"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="6aI-u5-xfu"/>
                                         </constraints>
                                     </pickerView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vct-pQ-eTk">
-                                        <rect key="frame" x="0.0" y="41" width="253" height="128"/>
+                                        <rect key="frame" x="0.0" y="41.666666666666657" width="253" height="128.66666666666669"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="yqu-gc-GuH">
-                                                <rect key="frame" x="0.0" y="108" width="253" height="20"/>
+                                                <rect key="frame" x="0.0" y="108.66666666666669" width="253" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="0Bg-FY-gys"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="tDl-zn-TX6"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="default">
                                                     <mask key="constraints">
@@ -120,8 +124,8 @@
                                                     </mask>
                                                 </variation>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter time" minimumFontSize="19" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="e2a-Hr-W54" customClass="NoPasteTextField" customModule="PAX" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="253" height="108"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="19" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="e2a-Hr-W54" customClass="NoPasteTextField" customModule="PAX" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.6666666666666714" width="253" height="108"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="900" constant="30" id="q3v-uu-KLj"/>
                                                 </constraints>
@@ -135,7 +139,7 @@
                                                 </connections>
                                             </textField>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="e2a-Hr-W54" firstAttribute="centerX" secondItem="Vct-pQ-eTk" secondAttribute="centerX" id="Bgd-GS-atP"/>
                                             <constraint firstItem="yqu-gc-GuH" firstAttribute="width" secondItem="Vct-pQ-eTk" secondAttribute="width" id="N0F-9U-ZYi"/>
@@ -143,16 +147,15 @@
                                             <constraint firstItem="e2a-Hr-W54" firstAttribute="width" secondItem="Vct-pQ-eTk" secondAttribute="width" id="hrJ-Ei-SRR"/>
                                             <constraint firstItem="yqu-gc-GuH" firstAttribute="top" secondItem="e2a-Hr-W54" secondAttribute="bottom" id="py2-Kn-VSP"/>
                                             <constraint firstAttribute="bottom" secondItem="yqu-gc-GuH" secondAttribute="bottom" id="uaL-Hp-Ldr"/>
-                                            <constraint firstItem="e2a-Hr-W54" firstAttribute="top" secondItem="Vct-pQ-eTk" secondAttribute="top" id="vGR-tI-unW"/>
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Vct-pQ-eTk" secondAttribute="bottom" priority="500" constant="10" id="DbW-6i-WL8"/>
-                                    <constraint firstItem="Vct-pQ-eTk" firstAttribute="centerY" secondItem="iMa-zN-bFt" secondAttribute="centerY" id="Ft6-Hu-0oD"/>
-                                    <constraint firstItem="Vct-pQ-eTk" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iMa-zN-bFt" secondAttribute="top" priority="500" constant="10" id="NOO-QJ-FPX"/>
-                                    <constraint firstItem="UFu-6H-w6r" firstAttribute="leading" secondItem="Vct-pQ-eTk" secondAttribute="trailing" constant="10" id="YSq-Ge-dpn"/>
+                                    <constraint firstAttribute="bottom" secondItem="Vct-pQ-eTk" secondAttribute="bottom" priority="500" constant="46.5" id="DbW-6i-WL8"/>
+                                    <constraint firstItem="Vct-pQ-eTk" firstAttribute="centerY" secondItem="iMa-zN-bFt" secondAttribute="centerY" constant="-2.5" id="Ft6-Hu-0oD"/>
+                                    <constraint firstItem="Vct-pQ-eTk" firstAttribute="top" secondItem="iMa-zN-bFt" secondAttribute="top" priority="500" constant="41.5" id="NOO-QJ-FPX"/>
+                                    <constraint firstItem="UFu-6H-w6r" firstAttribute="leading" secondItem="Vct-pQ-eTk" secondAttribute="trailing" constant="41" id="YSq-Ge-dpn"/>
                                     <constraint firstAttribute="trailing" secondItem="UFu-6H-w6r" secondAttribute="trailing" id="czr-Uz-lHs"/>
                                     <constraint firstItem="UFu-6H-w6r" firstAttribute="centerY" secondItem="iMa-zN-bFt" secondAttribute="centerY" id="fiX-v4-WJD"/>
                                     <constraint firstItem="Vct-pQ-eTk" firstAttribute="leading" secondItem="iMa-zN-bFt" secondAttribute="leading" id="lju-n9-UJd"/>
@@ -161,7 +164,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="TET-fO-WfU" firstAttribute="height" secondItem="iMa-zN-bFt" secondAttribute="height" id="1qL-co-jaX"/>
                             <constraint firstItem="iMa-zN-bFt" firstAttribute="leading" secondItem="KVz-M5-neI" secondAttribute="leadingMargin" id="41t-Ng-HJp"/>
@@ -174,7 +177,6 @@
                             <constraint firstAttribute="trailingMargin" secondItem="iMa-zN-bFt" secondAttribute="trailing" id="vEk-qd-59x"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="that_class_picker" destination="GGj-Xo-k4S" id="Fcr-hF-o84"/>
                         <outlet property="that_time" destination="JZw-vT-f1x" id="7pe-Ta-xSt"/>
@@ -186,7 +188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="251.5" y="386.5"/>
+            <point key="canvasLocation" x="251.25" y="385.56338028169017"/>
         </scene>
     </scenes>
 </document>
