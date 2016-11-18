@@ -9,20 +9,20 @@
 import Foundation
 
 class Defaults {
-    let defaults = NSUserDefaults.standardUserDefaults()
+    let defaults = UserDefaults.standard
     var thisTime = Double()
     var thisPaxPicker = Int()
     var thatPaxPicker = Int()
     
     init() {
-        thisTime = defaults.doubleForKey("PAX_thisTime")
-        thisPaxPicker = defaults.integerForKey("PAX_thisPickerIndex")
-        thatPaxPicker = defaults.integerForKey("PAX_thatPickerIndex")
+        thisTime = defaults.double(forKey: "PAX_thisTime")
+        thisPaxPicker = defaults.integer(forKey: "PAX_thisPickerIndex")
+        thatPaxPicker = defaults.integer(forKey: "PAX_thatPickerIndex")
     }
     
-    func set(thisTimeNew:Double, thisPaxPickerNew:Int, thatPaxPickerNew:Int) {
-        defaults.setDouble(thisTimeNew, forKey: "PAX_thisTime")
-        defaults.setInteger(thisPaxPickerNew, forKey: "PAX_thisPickerIndex")
-        defaults.setInteger(thatPaxPickerNew, forKey: "PAX_thatPickerIndex")
+    func set(_ thisTimeNew:Double, thisPaxPickerNew:Int, thatPaxPickerNew:Int) {
+        defaults.set(thisTimeNew, forKey: "PAX_thisTime")
+        defaults.set(thisPaxPickerNew, forKey: "PAX_thisPickerIndex")
+        defaults.set(thatPaxPickerNew, forKey: "PAX_thatPickerIndex")
     }
 }

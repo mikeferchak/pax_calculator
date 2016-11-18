@@ -14,60 +14,60 @@ class Scca {
     var classNames = [String]()
     let sccaclasses = [
         "Street":[
-            "SS": 0.835,
-            "AS": 0.833,
-            "BS": 0.826,
-            "CS": 0.819,
-            "DS": 0.811,
-            "ES": 0.807,
-            "FS": 0.814,
-            "GS": 0.806,
-            "HS": 0.798,
-            "HCS": 0.817],
+            "SS": 0.821,
+            "AS": 0.819,
+            "BS": 0.813,
+            "CS": 0.808,
+            "DS": 0.801,
+            "ES": 0.794,
+            "FS": 0.802,
+            "GS": 0.793,
+            "HS": 0.786,
+            "HCS": 0.804],
         "Street touring":[
-            "STF": 0.809,
-            "STS": 0.832,
-            "STX": 0.836,
-            "STU": 0.845,
-            "STR": 0.841,
-            "STP": 0.837],
+            "STF": 0.800,
+            "STS": 0.818,
+            "STX": 0.822,
+            "STU": 0.831,
+            "STR": 0.830,
+            "STP": 0.820],
         "Street modified":[
-            "SMF": 0.861,
-            "SSM": 0.882,
-            "SM": 0.87],
+            "SMF": 0.848,
+            "SSM": 0.875,
+            "SM": 0.861],
         "Street prepared":[
-            "SSP": 0.872,
-            "ASP": 0.865,
-            "BSP": 0.863,
-            "CSP": 0.867,
-            "DSP": 0.855,
-            "ESP": 0.852,
-            "FSP": 0.84],
+            "SSP": 0.862,
+            "ASP": 0.856,
+            "BSP": 0.853,
+            "CSP": 0.860,
+            "DSP": 0.842,
+            "ESP": 0.837,
+            "FSP": 0.829],
         "Prepared":[
-            "XP": 0.907,
-            "BP": 0.883,
-            "CP": 0.864,
-            "DP": 0.879,
-            "EP": 0.871,
-            "FP": 0.880,
-            "HCR": 0.838],
+            "XP": 0.892,
+            "BP": 0.869,
+            "CP": 0.854,
+            "DP": 0.865,
+            "EP": 0.859,
+            "FP": 0.873,
+            "HCR": 0.825],
         "Modified":[
             "AM": 1.000,
-            "BM": 0.966,
-            "CM": 0.916,
-            "DM": 0.919,
-            "EM": 0.920,
-            "FM": 0.926,
-            "KM": 0.954,
-            "FSAE": 0.982],
+            "BM": 0.956,
+            "CM": 0.901,
+            "DM": 0.906,
+            "EM": 0.905,
+            "FM": 0.916,
+            "KM": 0.939,
+            "FSAE": 0.966],
         "Other":[
-            "SSR": 0.860,
-            "CAM-C": 0.839,
-            "CAM-T": 0.834,
-            "CAM-S": 0.848,
-            "JA": 0.878,
-            "JB": 0.842,
-            "JC": 0.734]
+            "SSR": 0.847,
+            "CAM-C": 0.823,
+            "CAM-T": 0.817,
+            "CAM-S": 0.838,
+            "JA": 0.864,
+            "JB": 0.834,
+            "JC": 0.726]
     ]
     
     init() {
@@ -77,14 +77,14 @@ class Scca {
             }
         }
         categories = Array(sccaclasses.keys)
-        classNames = Array(paxes.keys).sort()
+        classNames = Array(paxes.keys).sorted()
     }
   
-    func class_name_at_index(index:Int) -> String {
+    func class_name_at_index(_ index:Int) -> String {
         return classNames[index]
     }
     
-    func pax_at_index(index:Int) -> Double {
+    func pax_at_index(_ index:Int) -> Double {
         return paxes[class_name_at_index(index) as String]!
     }
 }

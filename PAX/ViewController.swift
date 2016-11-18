@@ -16,7 +16,7 @@ class ViewController: UIViewController, UIPickerViewDelegate {
     @IBOutlet var that_time:UILabel!
     @IBOutlet var that_time_more_info:UILabel!
     
-    @IBAction func time_changed(sender: AnyObject) {
+    @IBAction func time_changed(_ sender: AnyObject) {
         recalculate()
     }
     
@@ -30,7 +30,7 @@ class ViewController: UIViewController, UIPickerViewDelegate {
         applyDefaults()
         recalculate()
         
-        this_time.enabled = true
+        this_time.isEnabled = true
         this_time.becomeFirstResponder()
     }
 
@@ -38,9 +38,9 @@ class ViewController: UIViewController, UIPickerViewDelegate {
         super.didReceiveMemoryWarning()
     }
     
-    override func canPerformAction(action: Selector, withSender sender: AnyObject?) -> Bool {
-        UIMenuController.sharedMenuController().menuVisible = false
-        if action == #selector(NSObject.paste(_:)) {
+    override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
+        UIMenuController.shared.isMenuVisible = false
+        if action == #selector(UIResponderStandardEditActions.paste(_:)) {
             return false
         }
         return super.canPerformAction(action, withSender:sender)
@@ -58,10 +58,10 @@ class ViewController: UIViewController, UIPickerViewDelegate {
     }
   
     func recalculate() {
-        if let thisRun = Run(txtFieldTime: this_time, pickerIndex: this_class_picker.selectedRowInComponent(0)){
+        if let thisRun = Run(txtFieldTime: this_time, pickerIndex: this_class_picker.selectedRow(inComponent: 0)){
             let thatRun = Run(calculateFrom: thisRun.time,
                               thisPickerIndex: thisRun.pax.pickerIndex,
-                              thatPickerIndex: that_class_picker.selectedRowInComponent(0))
+                              thatPickerIndex: that_class_picker.selectedRow(inComponent: 0))
             
             that_time.text = "\(thatRun.time)"
             Defaults().set(thisRun.time,
@@ -71,23 +71,23 @@ class ViewController: UIViewController, UIPickerViewDelegate {
         }
     }
     
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+    func numberOfComponentsInPickerView(_ pickerView: UIPickerView) -> Int {
         return 1
     }
     
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return scca.classNames.count
     }
     
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return scca.classNames[row]
     }
     
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         recalculate()
     }
     
-    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+    func textField(_ textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         let currentCharacterCount = textField.text?.characters.count ?? 0
         if (range.length + range.location > currentCharacterCount){
             return false
@@ -96,7 +96,7 @@ class ViewController: UIViewController, UIPickerViewDelegate {
         return newLength <= 7
     }
     
-    func update_this_more_info(thisRun:Run, thatRun:Run) {
+    func update_this_more_info(_ thisRun:Run, thatRun:Run) {
         let difference = thisRun.time - thatRun.time,
             rounded_difference = round(1000 * difference) / 1000
         
