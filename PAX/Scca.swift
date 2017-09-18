@@ -14,16 +14,16 @@ class Scca {
     var classNames = [String]()
     let sccaclasses = [
         "Street":[
-            "SS": 0.821,
+            "SS": 0.826,
             "AS": 0.819,
             "BS": 0.813,
-            "CS": 0.808,
+            "CS": 0.810,
             "DS": 0.801,
             "ES": 0.794,
-            "FS": 0.802,
+            "FS": 0.804,
             "GS": 0.793,
             "HS": 0.786,
-            "HCS": 0.804],
+            "HCS": 0.809],
         "Street touring":[
             "STF": 0.800,
             "STS": 0.818,
