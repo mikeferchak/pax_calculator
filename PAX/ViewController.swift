@@ -71,11 +71,11 @@ class ViewController: UIViewController, UIPickerViewDelegate {
         }
     }
     
-    func numberOfComponentsInPickerView(_ pickerView: UIPickerView) -> Int {
+    @objc func numberOfComponentsInPickerView(_ pickerView: UIPickerView) -> Int {
         return 1
     }
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    @objc func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return scca.classNames.count
     }
     
@@ -87,7 +87,7 @@ class ViewController: UIViewController, UIPickerViewDelegate {
         recalculate()
     }
     
-    func textField(_ textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
+    @objc func textField(_ textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         let currentCharacterCount = textField.text?.characters.count ?? 0
         if (range.length + range.location > currentCharacterCount){
             return false
