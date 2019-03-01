@@ -32,15 +32,15 @@
                                         <rect key="frame" x="0.0" y="27.5" width="394" height="458.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DqT-jw-47S">
-                                                <rect key="frame" x="0.0" y="171.5" width="294" height="116"/>
+                                                <rect key="frame" x="0.0" y="156.5" width="294" height="145.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" adjustsLetterSpacingToFitWidth="YES" enabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZw-vT-f1x">
                                                         <rect key="frame" x="0.0" y="0.0" width="294" height="95.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="80"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="That Time More Info" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="NqJ-ZB-ntN">
-                                                        <rect key="frame" x="0.0" y="95.5" width="294" height="20.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="NqJ-ZB-ntN">
+                                                        <rect key="frame" x="0.0" y="95.5" width="294" height="50"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -68,10 +68,10 @@
                                         <rect key="frame" x="0.0" y="494" width="394" height="34"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="W0M-XV-akt" userLabel="ThisTimeStackView">
-                                                <rect key="frame" x="0.0" y="-34" width="294" height="102.5"/>
+                                                <rect key="frame" x="0.0" y="-51" width="294" height="136"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" minimumFontSize="11" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="e2a-Hr-W54" customClass="NoPasteTextField" customModule="PAX" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="294" height="72"/>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="11" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="e2a-Hr-W54" customClass="NoPasteTextField" customModule="PAX" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="294" height="76"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="60"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" returnKeyType="done"/>
                                                         <connections>
@@ -81,8 +81,8 @@
                                                             <outlet property="delegate" destination="BYZ-38-t0r" id="lgx-PN-FAZ"/>
                                                         </connections>
                                                     </textField>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This time more info" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yqu-gc-GuH">
-                                                        <rect key="frame" x="0.0" y="82" width="294" height="20.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yqu-gc-GuH">
+                                                        <rect key="frame" x="0.0" y="86" width="294" height="50"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
