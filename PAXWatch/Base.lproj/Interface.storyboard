@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38" orientation="portrait">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="o8p-Pw-AWQ">
+    <device id="watch44" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,66 +14,104 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PAXWatch" customModuleProvider="target">
                     <items>
-                        <group width="1" alignment="left" layout="vertical" id="Erh-DQ-WAA">
+                        <group width="1" alignment="left" layout="vertical" spacing="0.0" id="Erh-DQ-WAA">
                             <items>
-                                <group width="1" alignment="left" verticalAlignment="center" layout="vertical" spacing="0.0" id="8c3-eM-fAa">
+                                <group width="1" height="32" alignment="center" id="rSU-vi-ckV">
                                     <items>
-                                        <label alignment="left" text="55.555" id="Cao-gn-Efi">
-                                            <fontDescription key="font" style="UICTFontTextStyleTitle1"/>
-                                        </label>
-                                        <label alignment="left" verticalAlignment="bottom" text="SSC" id="nPJ-OV-v9g">
-                                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
-                                        </label>
+                                        <label alignment="center" text="Diff:" id="ds3-oH-qqm"/>
+                                        <label alignment="center" text="0.555s" id="5fc-v2-EmO"/>
                                     </items>
                                 </group>
-                                <label alignment="left" text="Diff:" id="ds3-oH-qqm"/>
-                                <label alignment="left" text="0.555s" id="5fc-v2-EmO"/>
+                                <group width="1" alignment="left" verticalAlignment="center" spacing="0.0" id="8c3-eM-fAa">
+                                    <items>
+                                        <label width="0.69999999999999996" alignment="left" text="55.555" textAlignment="center" baselineAdjustment="alignCenters" minimumScaleFactor="0.40000000000000002" id="Cao-gn-Efi">
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="font" type="system" pointSize="41"/>
+                                        </label>
+                                    </items>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </group>
+                            </items>
+                        </group>
+                        <label width="1" alignment="left" verticalAlignment="center" text="SSC" textAlignment="right" id="nPJ-OV-v9g">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                        </label>
+                        <group width="1" alignment="left" layout="vertical" id="DEu-Jn-CtM">
+                            <items>
+                                <label width="1" height="24" alignment="center" text="50.000" textAlignment="center" minimumScaleFactor="0.40000000000000002" id="yHs-3T-uGU">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" pointSize="29"/>
+                                </label>
+                                <label width="1" alignment="center" text="DS" textAlignment="right" id="1xO-vK-qdd">
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" pointSize="13"/>
+                                </label>
                             </items>
                         </group>
                     </items>
                     <connections>
-                        <segue destination="o8p-Pw-AWQ" kind="relationship" relationship="nextPage" id="pjR-b5-9hO"/>
+                        <outlet property="thatTimeLabel" destination="Cao-gn-Efi" id="7Rg-0l-utb"/>
+                        <outlet property="thisClassLabel" destination="nPJ-OV-v9g" id="0Yw-fn-H3L"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="197" y="-29"/>
+            <point key="canvasLocation" x="195" y="-38"/>
         </scene>
-        <!--Picker Controller-->
+        <!--PAX-->
         <scene sceneID="0NW-ah-Svy">
             <objects>
-                <controller id="o8p-Pw-AWQ" customClass="PickerController" customModule="PAXWatch_Extension">
+                <controller title="PAX" id="o8p-Pw-AWQ" customClass="PickerController" customModule="PAXWatch_Extension">
                     <items>
-                        <group width="1" height="1" alignment="left" layout="vertical" id="lid-xv-9NG">
+                        <group width="0.94999999999999996" height="67" alignment="left" layout="vertical" id="Yak-2M-MIM">
                             <items>
-                                <group width="1" height="0.5" alignment="left" id="yng-Ny-ice">
+                                <label height="48" alignment="left" text="55.555" minimumScaleFactor="0.59999999999999998" id="Aye-Mx-l1c">
+                                    <fontDescription key="font" type="system" pointSize="61"/>
+                                </label>
+                                <label width="1" height="14" alignment="left" text="CAM-S" textAlignment="right" id="fqU-BG-ph5">
+                                    <fontDescription key="font" type="system" pointSize="13"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="0.59999999999999998" alignment="left" layout="vertical" id="lid-xv-9NG">
+                            <items>
+                                <group width="1" height="0.40000000000000002" alignment="left" id="yng-Ny-ice">
                                     <items>
-                                        <picker width="0.32000000000000001" height="1" alignment="left" focusStyle="sequence" indicatorMode="shownWhileFocused" id="VwK-uT-viN" userLabel="ThisTimePickerSeconds">
+                                        <picker width="0.34999999999999998" height="1" alignment="left" focusStyle="stack" indicatorMode="shownWhileFocused" id="VwK-uT-viN" userLabel="ThisTimePickerSeconds">
                                             <connections>
                                                 <action selector="secondsPickerChanged:" destination="o8p-Pw-AWQ" id="cdT-tr-U0y"/>
                                             </connections>
                                         </picker>
-                                        <label alignment="left" verticalAlignment="bottom" text="." id="3Rg-Cr-6X1"/>
-                                        <picker width="0.20999999999999999" height="1" alignment="left" focusStyle="sequence" indicatorMode="shownWhileFocused" id="F9F-iZ-cKz" userLabel="TimeTimePickerTenths">
+                                        <label width="0.050000000000000003" alignment="left" verticalAlignment="bottom" text="." textAlignment="center" id="3Rg-Cr-6X1"/>
+                                        <picker width="0.20000000000000001" height="1" alignment="left" focusStyle="stack" indicatorMode="shownWhileFocused" id="F9F-iZ-cKz" userLabel="TimeTimePickerTenths">
                                             <connections>
                                                 <action selector="tenthsPickerChanged:" destination="o8p-Pw-AWQ" id="jbk-8C-IJR"/>
                                             </connections>
                                         </picker>
-                                        <picker width="0.20999999999999999" height="1" alignment="left" focusStyle="sequence" indicatorMode="shownWhileFocused" id="5md-RR-CUN" userLabel="ThisTimePickerHundreths">
+                                        <picker width="0.20000000000000001" height="1" alignment="left" focusStyle="stack" indicatorMode="shownWhileFocused" id="5md-RR-CUN" userLabel="ThisTimePickerHundreths">
                                             <connections>
                                                 <action selector="hundrethsPickerChanged:" destination="o8p-Pw-AWQ" id="DyZ-xy-nVc"/>
                                             </connections>
                                         </picker>
-                                        <picker width="0.20999999999999999" height="1" alignment="left" focusStyle="sequence" indicatorMode="shownWhileFocused" id="3fz-Pg-yle" userLabel="ThisTimePickerThousandths">
+                                        <picker width="0.20000000000000001" height="1" alignment="left" focusStyle="stack" indicatorMode="shownWhileFocused" id="3fz-Pg-yle" userLabel="ThisTimePickerThousandths">
                                             <connections>
                                                 <action selector="thousandthsPickerChanged:" destination="o8p-Pw-AWQ" id="2Om-ZW-Ebr"/>
                                             </connections>
                                         </picker>
                                     </items>
                                 </group>
-                                <group width="1" height="0.5" alignment="left" id="TZA-81-IUf">
+                                <group width="1" height="0.59999999999999998" alignment="center" id="TZA-81-IUf">
                                     <items>
-                                        <picker width="0.5" height="1" alignment="left" id="aZV-IA-ePm" userLabel="ThisClassPicker"/>
-                                        <picker width="0.5" height="1" alignment="left" id="Tni-ZS-vh9" userLabel="ThatClassPicker"/>
+                                        <picker width="0.45000000000000001" height="1" alignment="left" focusStyle="sequence" indicatorMode="shownWhileFocused" id="aZV-IA-ePm" userLabel="ThisClassPicker">
+                                            <connections>
+                                                <action selector="thisClassPickerChanged:" destination="o8p-Pw-AWQ" id="Rhg-NM-nRA"/>
+                                            </connections>
+                                        </picker>
+                                        <label width="0.10000000000000001" height="0.69999999999999996" alignment="left" verticalAlignment="bottom" text="→" textAlignment="center" id="xWn-cS-dXO"/>
+                                        <picker width="0.45000000000000001" height="1" alignment="left" focusStyle="sequence" indicatorMode="shownWhileFocused" id="Tni-ZS-vh9" userLabel="ThatClassPicker">
+                                            <connections>
+                                                <action selector="thatClassPickerChanged:" destination="o8p-Pw-AWQ" id="NsD-qZ-msh"/>
+                                            </connections>
+                                        </picker>
                                     </items>
                                 </group>
                             </items>
@@ -83,11 +121,15 @@
                         <outlet property="hundrethsPicker" destination="5md-RR-CUN" id="cPM-v8-buK"/>
                         <outlet property="secondsPicker" destination="VwK-uT-viN" id="2xq-PF-Mck"/>
                         <outlet property="tenthsPicker" destination="F9F-iZ-cKz" id="TWF-Cq-Gga"/>
+                        <outlet property="thatClassLabel" destination="fqU-BG-ph5" id="4Kc-xc-erB"/>
+                        <outlet property="thatClassPicker" destination="Tni-ZS-vh9" id="noj-he-3eU"/>
+                        <outlet property="thatTimeLabel" destination="Aye-Mx-l1c" id="dC5-f6-kCC"/>
+                        <outlet property="thisClassPicker" destination="aZV-IA-ePm" id="mLa-Lq-a5g"/>
                         <outlet property="thousandthsPicker" destination="3fz-Pg-yle" id="Rdc-dV-uQL"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="493" y="-29"/>
+            <point key="canvasLocation" x="492.99999999999994" y="-29.598214285714285"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

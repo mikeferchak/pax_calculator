@@ -22,6 +22,10 @@
 		3256A3C52229F5B7002DCC2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3256A3C42229F5B7002DCC2C /* Assets.xcassets */; };
 		3256A3CA2229F5B7002DCC2C /* PAXWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3256A3AD2229F5B6002DCC2C /* PAXWatch.app */; };
 		3256A3D32229FA03002DCC2C /* PickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3256A3D22229FA03002DCC2C /* PickerController.swift */; };
+		3256A3D4222A0872002DCC2C /* Scca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323EDDCC1B38C6E800225061 /* Scca.swift */; };
+		3256A3D6222A0892002DCC2C /* Pax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3247B1571CCD54A100395945 /* Pax.swift */; };
+		3256A3D7222A0898002DCC2C /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D328901B390F7900CF9F43 /* Calculator.swift */; };
+		3256A3DD222A11F1002DCC2C /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3247B1531CCD377500395945 /* Defaults.swift */; };
 		32C0EE021B388F370034CE25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C0EE011B388F370034CE25 /* AppDelegate.swift */; };
 		32C0EE041B388F370034CE25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C0EE031B388F370034CE25 /* ViewController.swift */; };
 		32C0EE071B388F370034CE25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C0EE051B388F370034CE25 /* Main.storyboard */; };
@@ -90,6 +94,8 @@
 		3256A3C62229F5B7002DCC2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3256A3C72229F5B7002DCC2C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		3256A3D22229FA03002DCC2C /* PickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerController.swift; sourceTree = "<group>"; };
+		3256A3DE222A1728002DCC2C /* PAXWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PAXWatch.entitlements; sourceTree = "<group>"; };
+		3256A3DF222A177F002DCC2C /* PAXWatch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "PAXWatch Extension.entitlements"; sourceTree = "<group>"; };
 		32C0EDFE1B388F370034CE25 /* PAX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PAX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C0EE011B388F370034CE25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32C0EE031B388F370034CE25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +127,7 @@
 		3256A3AE2229F5B6002DCC2C /* PAXWatch */ = {
 			isa = PBXGroup;
 			children = (
+				3256A3DE222A1728002DCC2C /* PAXWatch.entitlements */,
 				3256A3AF2229F5B6002DCC2C /* Interface.storyboard */,
 				3256A3B22229F5B6002DCC2C /* Assets.xcassets */,
 				3256A3B42229F5B6002DCC2C /* Info.plist */,
@@ -131,6 +138,7 @@
 		3256A3BD2229F5B7002DCC2C /* PAXWatch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				3256A3DF222A177F002DCC2C /* PAXWatch Extension.entitlements */,
 				3256A3BE2229F5B7002DCC2C /* InterfaceController.swift */,
 				3256A3D22229FA03002DCC2C /* PickerController.swift */,
 				3256A3C02229F5B7002DCC2C /* ExtensionDelegate.swift */,
@@ -142,9 +150,21 @@
 			path = "PAXWatch Extension";
 			sourceTree = "<group>";
 		};
+		3256A3D5222A087D002DCC2C /* SharedClasses */ = {
+			isa = PBXGroup;
+			children = (
+				323EDDCC1B38C6E800225061 /* Scca.swift */,
+				3247B1571CCD54A100395945 /* Pax.swift */,
+				32D328901B390F7900CF9F43 /* Calculator.swift */,
+				3247B1531CCD377500395945 /* Defaults.swift */,
+			);
+			path = SharedClasses;
+			sourceTree = "<group>";
+		};
 		32C0EDF51B388F370034CE25 = {
 			isa = PBXGroup;
 			children = (
+				3256A3D5222A087D002DCC2C /* SharedClasses */,
 				322AF48D1CD443F900100148 /* NoPasteTextField.swift */,
 				32C0EE001B388F370034CE25 /* PAX */,
 				3256A3AE2229F5B6002DCC2C /* PAXWatch */,
@@ -169,15 +189,11 @@
 				32D3288D1B38E06700CF9F43 /* PAX.entitlements */,
 				32C0EE011B388F370034CE25 /* AppDelegate.swift */,
 				32C0EE031B388F370034CE25 /* ViewController.swift */,
+				3247B1551CCD546100395945 /* Run.swift */,
 				32C0EE051B388F370034CE25 /* Main.storyboard */,
 				32C0EE0A1B388F370034CE25 /* LaunchScreen.storyboard */,
 				32C0EE0D1B388F370034CE25 /* Info.plist */,
-				323EDDCC1B38C6E800225061 /* Scca.swift */,
-				3247B1571CCD54A100395945 /* Pax.swift */,
-				32D328901B390F7900CF9F43 /* Calculator.swift */,
 				3223EB761CC2D48200E10D7E /* Assets.xcassets */,
-				3247B1531CCD377500395945 /* Defaults.swift */,
-				3247B1551CCD546100395945 /* Run.swift */,
 			);
 			path = PAX;
 			sourceTree = "<group>";
@@ -252,11 +268,21 @@
 						CreatedOnToolsVersion = 10.1;
 						DevelopmentTeam = GPCTX783ZZ;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					3256A3B82229F5B7002DCC2C = {
 						CreatedOnToolsVersion = 10.1;
 						DevelopmentTeam = GPCTX783ZZ;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					32C0EDFD1B388F370034CE25 = {
 						CreatedOnToolsVersion = 7.0;
@@ -326,7 +352,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3256A3C32229F5B7002DCC2C /* NotificationController.swift in Sources */,
+				3256A3DD222A11F1002DCC2C /* Defaults.swift in Sources */,
+				3256A3D4222A0872002DCC2C /* Scca.swift in Sources */,
+				3256A3D7222A0898002DCC2C /* Calculator.swift in Sources */,
 				3256A3C12229F5B7002DCC2C /* ExtensionDelegate.swift in Sources */,
+				3256A3D6222A0892002DCC2C /* Pax.swift in Sources */,
 				3256A3BF2229F5B7002DCC2C /* InterfaceController.swift in Sources */,
 				3256A3D32229FA03002DCC2C /* PickerController.swift in Sources */,
 			);
@@ -621,7 +651,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = PAX/PAX.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = GPCTX783ZZ;
@@ -641,7 +670,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = PAX/PAX.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = GPCTX783ZZ;
