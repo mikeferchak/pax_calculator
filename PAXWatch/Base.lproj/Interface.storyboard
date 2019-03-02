@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PAXWatch" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="Erh-DQ-WAA">
+                            <items>
+                                <group width="1" alignment="left" verticalAlignment="center" layout="vertical" spacing="0.0" id="8c3-eM-fAa">
+                                    <items>
+                                        <label alignment="left" text="55.555" id="Cao-gn-Efi">
+                                            <fontDescription key="font" style="UICTFontTextStyleTitle1"/>
+                                        </label>
+                                        <label alignment="left" verticalAlignment="bottom" text="SSC" id="nPJ-OV-v9g">
+                                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <label alignment="left" text="Diff:" id="ds3-oH-qqm"/>
+                                <label alignment="left" text="0.555s" id="5fc-v2-EmO"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <segue destination="o8p-Pw-AWQ" kind="relationship" relationship="nextPage" id="pjR-b5-9hO"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="197" y="-29"/>
+        </scene>
+        <!--Picker Controller-->
+        <scene sceneID="0NW-ah-Svy">
+            <objects>
+                <controller id="o8p-Pw-AWQ" customClass="PickerController" customModule="PAXWatch_Extension">
+                    <items>
+                        <group width="1" height="1" alignment="left" layout="vertical" id="lid-xv-9NG">
+                            <items>
+                                <group width="1" height="0.5" alignment="left" id="yng-Ny-ice">
+                                    <items>
+                                        <picker width="0.32000000000000001" height="1" alignment="left" focusStyle="sequence" indicatorMode="shownWhileFocused" id="VwK-uT-viN" userLabel="ThisTimePickerSeconds">
+                                            <connections>
+                                                <action selector="secondsPickerChanged:" destination="o8p-Pw-AWQ" id="cdT-tr-U0y"/>
+                                            </connections>
+                                        </picker>
+                                        <label alignment="left" verticalAlignment="bottom" text="." id="3Rg-Cr-6X1"/>
+                                        <picker width="0.20999999999999999" height="1" alignment="left" focusStyle="sequence" indicatorMode="shownWhileFocused" id="F9F-iZ-cKz" userLabel="TimeTimePickerTenths">
+                                            <connections>
+                                                <action selector="tenthsPickerChanged:" destination="o8p-Pw-AWQ" id="jbk-8C-IJR"/>
+                                            </connections>
+                                        </picker>
+                                        <picker width="0.20999999999999999" height="1" alignment="left" focusStyle="sequence" indicatorMode="shownWhileFocused" id="5md-RR-CUN" userLabel="ThisTimePickerHundreths">
+                                            <connections>
+                                                <action selector="hundrethsPickerChanged:" destination="o8p-Pw-AWQ" id="DyZ-xy-nVc"/>
+                                            </connections>
+                                        </picker>
+                                        <picker width="0.20999999999999999" height="1" alignment="left" focusStyle="sequence" indicatorMode="shownWhileFocused" id="3fz-Pg-yle" userLabel="ThisTimePickerThousandths">
+                                            <connections>
+                                                <action selector="thousandthsPickerChanged:" destination="o8p-Pw-AWQ" id="2Om-ZW-Ebr"/>
+                                            </connections>
+                                        </picker>
+                                    </items>
+                                </group>
+                                <group width="1" height="0.5" alignment="left" id="TZA-81-IUf">
+                                    <items>
+                                        <picker width="0.5" height="1" alignment="left" id="aZV-IA-ePm" userLabel="ThisClassPicker"/>
+                                        <picker width="0.5" height="1" alignment="left" id="Tni-ZS-vh9" userLabel="ThatClassPicker"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="hundrethsPicker" destination="5md-RR-CUN" id="cPM-v8-buK"/>
+                        <outlet property="secondsPicker" destination="VwK-uT-viN" id="2xq-PF-Mck"/>
+                        <outlet property="tenthsPicker" destination="F9F-iZ-cKz" id="TWF-Cq-Gga"/>
+                        <outlet property="thousandthsPicker" destination="3fz-Pg-yle" id="Rdc-dV-uQL"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="493" y="-29"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="PAXWatch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="PAXWatch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="345"/>
+        </scene>
+    </scenes>
+</document>

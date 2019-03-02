@@ -13,6 +13,15 @@
 		3247B1541CCD377500395945 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3247B1531CCD377500395945 /* Defaults.swift */; };
 		3247B1561CCD546100395945 /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3247B1551CCD546100395945 /* Run.swift */; };
 		3247B1581CCD54A100395945 /* Pax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3247B1571CCD54A100395945 /* Pax.swift */; };
+		3256A3B12229F5B6002DCC2C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3256A3AF2229F5B6002DCC2C /* Interface.storyboard */; };
+		3256A3B32229F5B6002DCC2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3256A3B22229F5B6002DCC2C /* Assets.xcassets */; };
+		3256A3BA2229F5B7002DCC2C /* PAXWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3256A3B92229F5B7002DCC2C /* PAXWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3256A3BF2229F5B7002DCC2C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3256A3BE2229F5B7002DCC2C /* InterfaceController.swift */; };
+		3256A3C12229F5B7002DCC2C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3256A3C02229F5B7002DCC2C /* ExtensionDelegate.swift */; };
+		3256A3C32229F5B7002DCC2C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3256A3C22229F5B7002DCC2C /* NotificationController.swift */; };
+		3256A3C52229F5B7002DCC2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3256A3C42229F5B7002DCC2C /* Assets.xcassets */; };
+		3256A3CA2229F5B7002DCC2C /* PAXWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3256A3AD2229F5B6002DCC2C /* PAXWatch.app */; };
+		3256A3D32229FA03002DCC2C /* PickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3256A3D22229FA03002DCC2C /* PickerController.swift */; };
 		32C0EE021B388F370034CE25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C0EE011B388F370034CE25 /* AppDelegate.swift */; };
 		32C0EE041B388F370034CE25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C0EE031B388F370034CE25 /* ViewController.swift */; };
 		32C0EE071B388F370034CE25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C0EE051B388F370034CE25 /* Main.storyboard */; };
@@ -20,13 +29,42 @@
 		32D328911B390F7900CF9F43 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D328901B390F7900CF9F43 /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3256A3BB2229F5B7002DCC2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32C0EDF61B388F370034CE25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3256A3B82229F5B7002DCC2C;
+			remoteInfo = "PAXWatch Extension";
+		};
+		3256A3C82229F5B7002DCC2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32C0EDF61B388F370034CE25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3256A3AC2229F5B6002DCC2C;
+			remoteInfo = PAXWatch;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
+		3256A3D02229F5B7002DCC2C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3256A3BA2229F5B7002DCC2C /* PAXWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		32C0EE4E1B388F370034CE25 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
+				3256A3CA2229F5B7002DCC2C /* PAXWatch.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,6 +78,18 @@
 		3247B1531CCD377500395945 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		3247B1551CCD546100395945 /* Run.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
 		3247B1571CCD54A100395945 /* Pax.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pax.swift; sourceTree = "<group>"; };
+		3256A3AD2229F5B6002DCC2C /* PAXWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PAXWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3256A3B02229F5B6002DCC2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3256A3B22229F5B6002DCC2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3256A3B42229F5B6002DCC2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3256A3B92229F5B7002DCC2C /* PAXWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PAXWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3256A3BE2229F5B7002DCC2C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		3256A3C02229F5B7002DCC2C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		3256A3C22229F5B7002DCC2C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		3256A3C42229F5B7002DCC2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3256A3C62229F5B7002DCC2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3256A3C72229F5B7002DCC2C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		3256A3D22229FA03002DCC2C /* PickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerController.swift; sourceTree = "<group>"; };
 		32C0EDFE1B388F370034CE25 /* PAX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PAX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C0EE011B388F370034CE25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32C0EE031B388F370034CE25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +101,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3256A3B62229F5B7002DCC2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		32C0EDFB1B388F370034CE25 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -61,11 +118,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3256A3AE2229F5B6002DCC2C /* PAXWatch */ = {
+			isa = PBXGroup;
+			children = (
+				3256A3AF2229F5B6002DCC2C /* Interface.storyboard */,
+				3256A3B22229F5B6002DCC2C /* Assets.xcassets */,
+				3256A3B42229F5B6002DCC2C /* Info.plist */,
+			);
+			path = PAXWatch;
+			sourceTree = "<group>";
+		};
+		3256A3BD2229F5B7002DCC2C /* PAXWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3256A3BE2229F5B7002DCC2C /* InterfaceController.swift */,
+				3256A3D22229FA03002DCC2C /* PickerController.swift */,
+				3256A3C02229F5B7002DCC2C /* ExtensionDelegate.swift */,
+				3256A3C22229F5B7002DCC2C /* NotificationController.swift */,
+				3256A3C42229F5B7002DCC2C /* Assets.xcassets */,
+				3256A3C62229F5B7002DCC2C /* Info.plist */,
+				3256A3C72229F5B7002DCC2C /* PushNotificationPayload.apns */,
+			);
+			path = "PAXWatch Extension";
+			sourceTree = "<group>";
+		};
 		32C0EDF51B388F370034CE25 = {
 			isa = PBXGroup;
 			children = (
 				322AF48D1CD443F900100148 /* NoPasteTextField.swift */,
 				32C0EE001B388F370034CE25 /* PAX */,
+				3256A3AE2229F5B6002DCC2C /* PAXWatch */,
+				3256A3BD2229F5B7002DCC2C /* PAXWatch Extension */,
 				32C0EDFF1B388F370034CE25 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				32C0EDFE1B388F370034CE25 /* PAX.app */,
+				3256A3AD2229F5B6002DCC2C /* PAXWatch.app */,
+				3256A3B92229F5B7002DCC2C /* PAXWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +185,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3256A3AC2229F5B6002DCC2C /* PAXWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3256A3D12229F5B7002DCC2C /* Build configuration list for PBXNativeTarget "PAXWatch" */;
+			buildPhases = (
+				3256A3AB2229F5B6002DCC2C /* Resources */,
+				3256A3D02229F5B7002DCC2C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3256A3BC2229F5B7002DCC2C /* PBXTargetDependency */,
+			);
+			name = PAXWatch;
+			productName = PAXWatch;
+			productReference = 3256A3AD2229F5B6002DCC2C /* PAXWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		3256A3B82229F5B7002DCC2C /* PAXWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3256A3CF2229F5B7002DCC2C /* Build configuration list for PBXNativeTarget "PAXWatch Extension" */;
+			buildPhases = (
+				3256A3B52229F5B7002DCC2C /* Sources */,
+				3256A3B62229F5B7002DCC2C /* Frameworks */,
+				3256A3B72229F5B7002DCC2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PAXWatch Extension";
+			productName = "PAXWatch Extension";
+			productReference = 3256A3B92229F5B7002DCC2C /* PAXWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		32C0EDFD1B388F370034CE25 /* PAX */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32C0EE4F1B388F370034CE25 /* Build configuration list for PBXNativeTarget "PAX" */;
@@ -112,6 +231,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				3256A3C92229F5B7002DCC2C /* PBXTargetDependency */,
 			);
 			name = PAX;
 			productName = PAX;
@@ -124,9 +244,20 @@
 		32C0EDF61B388F370034CE25 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Michael Ferchak";
 				TargetAttributes = {
+					3256A3AC2229F5B6002DCC2C = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = GPCTX783ZZ;
+						ProvisioningStyle = Automatic;
+					};
+					3256A3B82229F5B7002DCC2C = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = GPCTX783ZZ;
+						ProvisioningStyle = Automatic;
+					};
 					32C0EDFD1B388F370034CE25 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = GPCTX783ZZ;
@@ -153,11 +284,30 @@
 			projectRoot = "";
 			targets = (
 				32C0EDFD1B388F370034CE25 /* PAX */,
+				3256A3AC2229F5B6002DCC2C /* PAXWatch */,
+				3256A3B82229F5B7002DCC2C /* PAXWatch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3256A3AB2229F5B6002DCC2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3256A3B32229F5B6002DCC2C /* Assets.xcassets in Resources */,
+				3256A3B12229F5B6002DCC2C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3256A3B72229F5B7002DCC2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3256A3C52229F5B7002DCC2C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		32C0EDFC1B388F370034CE25 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -171,6 +321,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3256A3B52229F5B7002DCC2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3256A3C32229F5B7002DCC2C /* NotificationController.swift in Sources */,
+				3256A3C12229F5B7002DCC2C /* ExtensionDelegate.swift in Sources */,
+				3256A3BF2229F5B7002DCC2C /* InterfaceController.swift in Sources */,
+				3256A3D32229FA03002DCC2C /* PickerController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		32C0EDFA1B388F370034CE25 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -188,7 +349,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		3256A3BC2229F5B7002DCC2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3256A3B82229F5B7002DCC2C /* PAXWatch Extension */;
+			targetProxy = 3256A3BB2229F5B7002DCC2C /* PBXContainerItemProxy */;
+		};
+		3256A3C92229F5B7002DCC2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3256A3AC2229F5B6002DCC2C /* PAXWatch */;
+			targetProxy = 3256A3C82229F5B7002DCC2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		3256A3AF2229F5B6002DCC2C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3256A3B02229F5B6002DCC2C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		32C0EE051B388F370034CE25 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -208,6 +390,126 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3256A3CB2229F5B7002DCC2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GPCTX783ZZ;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = PAXWatch_Extension;
+				INFOPLIST_FILE = PAXWatch/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		3256A3CC2229F5B7002DCC2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GPCTX783ZZ;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = PAXWatch_Extension;
+				INFOPLIST_FILE = PAXWatch/Info.plist;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		3256A3CD2229F5B7002DCC2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GPCTX783ZZ;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "PAXWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		3256A3CE2229F5B7002DCC2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GPCTX783ZZ;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "PAXWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferchak.pax.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
 		32C0EE451B388F370034CE25 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -358,6 +660,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3256A3CF2229F5B7002DCC2C /* Build configuration list for PBXNativeTarget "PAXWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3256A3CD2229F5B7002DCC2C /* Debug */,
+				3256A3CE2229F5B7002DCC2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3256A3D12229F5B7002DCC2C /* Build configuration list for PBXNativeTarget "PAXWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3256A3CB2229F5B7002DCC2C /* Debug */,
+				3256A3CC2229F5B7002DCC2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		32C0EDF91B388F370034CE25 /* Build configuration list for PBXProject "PAX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
