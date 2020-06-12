@@ -15,6 +15,7 @@ class ViewController: UIViewController, UIPickerViewDelegate {
     @IBOutlet var that_class_picker:UIPickerView!
     @IBOutlet var that_time:UILabel!
     @IBOutlet var that_time_more_info:UILabel!
+    @IBOutlet var difference_label:UILabel!
     
     @IBAction func time_changed(_ sender: AnyObject) {
         recalculate()
@@ -97,11 +98,12 @@ class ViewController: UIViewController, UIPickerViewDelegate {
     }
     
     func update_this_more_info(_ thisRun:Run, thatRun:Run) {
-        let difference = thisRun.time - thatRun.time,
+        let difference = thatRun.time - thisRun.time,
             rounded_difference = round(1000 * difference) / 1000
         
-        this_time_more_info.text = "\(thisRun.pax.paxClass) PAX: \(thisRun.pax.paxIndex) \rDiff: \(rounded_difference)s"
-        that_time_more_info.text = "\(thatRun.pax.paxClass) PAX: \(thatRun.pax.paxIndex)"
+        this_time_more_info.text = "\(thisRun.pax.paxClass): \(thisRun.pax.paxIndex)"
+        that_time_more_info.text = "\(thatRun.pax.paxClass): \(thatRun.pax.paxIndex)"
+        difference_label.text = "Difference: \(rounded_difference)s"
     }
 }
 
