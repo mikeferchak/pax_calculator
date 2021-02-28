@@ -40,7 +40,7 @@ class ViewController: UIViewController, UIPickerViewDelegate {
     }
     
     override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
-        UIMenuController.shared.isMenuVisible = false
+        UIMenuController.shared.hideMenu()
         if action == #selector(UIResponderStandardEditActions.paste(_:)) {
             return false
         }
@@ -89,11 +89,11 @@ class ViewController: UIViewController, UIPickerViewDelegate {
     }
     
     @objc func textField(_ textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
-        let currentCharacterCount = textField.text?.characters.count ?? 0
+        let currentCharacterCount = textField.text?.count ?? 0
         if (range.length + range.location > currentCharacterCount){
             return false
         }
-        let newLength = currentCharacterCount + string.characters.count - range.length
+        let newLength = currentCharacterCount + string.count - range.length
         return newLength <= 7
     }
     
